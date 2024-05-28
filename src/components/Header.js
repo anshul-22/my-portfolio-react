@@ -3,20 +3,20 @@ import './styles/Header.css';
 
 const Header = () => {
   const typingAnimationElement = useRef(null);
-  const typingTexts = ['Software Developer', 'Web Developer'];
+  const typingTexts = useRef(['Software Developer', 'Web Developer']);
   const textIndex = useRef(0);
   const charIndex = useRef(0);
 
   useEffect(() => {
     const type = () => {
-      if (charIndex.current < typingTexts[textIndex.current].length) {
-        typingAnimationElement.current.textContent += typingTexts[textIndex.current][charIndex.current];
+      if (charIndex.current < typingTexts.current[textIndex.current].length) {
+        typingAnimationElement.current.textContent += typingTexts.current[textIndex.current][charIndex.current];
         charIndex.current++;
         setTimeout(type, 100);
       } else {
         setTimeout(() => {
           typingAnimationElement.current.textContent = '';
-          textIndex.current = (textIndex.current + 1) % typingTexts.length;
+          textIndex.current = (textIndex.current + 1) % typingTexts.current.length;
           charIndex.current = 0;
           type();
         }, 1000);
