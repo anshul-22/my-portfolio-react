@@ -1,0 +1,28 @@
+/* Container class with the desired margins */
+#certificates {
+    margin-left: 150px;
+    margin-right: 110px;
+}
+
+/* Certificates Section Styles */
+.certificates-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0px, 1fr));
+    grid-gap: 40px;
+    margin-bottom: 40px;
+}
+
+.cert-item img{
+    margin-top: 50px;
+    width: 100%;
+    border-radius: 10px;
+    transition: 2s;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 900px) {
+    .certificates-list {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
+}

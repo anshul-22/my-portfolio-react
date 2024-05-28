@@ -1,0 +1,114 @@
+/* Navbar Styles */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #080808;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo {
+    margin-left: 150px;
+    width: 140px;
+}
+
+nav ul {
+    margin-right: 110px;
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.fa-bars {
+    font-size: 25px;
+    cursor: pointer;
+    color: #fff;
+    display: none; /* Initially hidden, displayed only on mobile */
+}
+
+.fa-circle-xmark {
+    font-size: 25px;
+    cursor: pointer;
+    color: #fff;
+    display: none; /* Initially hidden, displayed only when menu is open */
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 900px) {
+    .logo {
+        margin-left: 0;
+    }
+
+    nav {
+        left: 30px;
+        width: 90%;
+        right: 0;
+    }
+
+    nav .fa-solid, nav .fa-regular {
+        display: block;
+    }
+
+    nav ul {
+        margin-right: 0;
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+        display: block;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 25px;
+    }
+
+    nav ul li a::after {
+        background: #fff;
+    }
+
+    .fa-circle-xmark {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+    }
+}
