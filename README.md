@@ -24,8 +24,8 @@ The website is live and can be accessed at [Portfolio Website](https://anshulher
 
 ## Installation
 To run the project locally, follow these steps:
-1. Clone the repository: `git clone https://github.com/your-username/portfolio-website.git`
-2. Navigate to the project directory: `cd portfolio-website`
+1. Clone the repository: `git clone https://github.com/anshul-22/my-porfolio-react.git`
+2. Navigate to the project directory: `cd my-porfolio-react`
 3. Install dependencies: `npm install`
 4. Start the development server: `npm start`
 5. Open your browser and go to `http://localhost:3000` to view the website.
