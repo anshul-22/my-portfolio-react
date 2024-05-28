@@ -2,6 +2,10 @@ import React from 'react';
 import './styles/Projects.css';
 
 const Projects = () => {
+    const handleClick = () => {
+        const githubUrl = "https://github.com/anshul-22";
+        window.location.href = githubUrl;
+    };
     return (
         <div id="projects">
             <div className="container">
@@ -28,7 +32,7 @@ const Projects = () => {
                         <a href="https://github.com/anshul-22/my-portfolio-react" className="btn btn2">Learn More</a>
                     </div>
                 </div>
-                <a className='btn btn2' href="https://github.com/anshul-22">See More(GitHub)</a>
+                <button className='btn btn2 seemore' onClick={handleClick}>See More(GitHub)</button>
             </div>
         </div>
     );

@@ -4,6 +4,9 @@
     margin-left: 150px;  
     margin-right: 110px;
 }
+#projects .container {
+    text-align: center; /* Center-align the text within the container */
+}
 .projects-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -37,6 +40,10 @@
 .projects-list div:hover {
     background: #ff004f;
     transform: translateY(-10px);
+}
+.seemore{
+    cursor: pointer;
+    justify-content: center;
 }
 
 /* Responsive Styles */

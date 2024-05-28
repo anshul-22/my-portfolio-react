@@ -18,8 +18,8 @@ const About = () => {
                     <div className="about-col-2">
                         <h1 className="sub-title">About Me</h1>
                         <p>
-                            Dynamic and motivated fresher with a degree in Computer Science Engineering.
-                            Proficient in Java, C++, MySQL, Hibernate and JavaScript. I enjoy solving
+                            Dynamic and motivated fresher with a degree in Computer Science and Engineering.
+                            Proficient in Java, C++, MySQL, Hibernate,JavaScript and React. I enjoy solving
                             problems and working in teams. Excited to use my knowledge and experience to
                             create meaningful solutions with others.
                         </p>

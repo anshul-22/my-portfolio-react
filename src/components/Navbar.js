@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './styles/Navbar.css';
 
 const Navbar = () => {
@@ -15,6 +15,32 @@ const Navbar = () => {
     const handleTabClick = (tabName) => {
         setActiveTab(tabName);
     };
+
+    useEffect(() => {
+        const sectionList = ['header', 'about', 'projects', 'certificates', 'contact'];
+
+        const handleScroll = () => {
+            const scrollPosition = window.scrollY;
+        
+            for (const section of sectionList) {
+                const sectionElement = document.getElementById(section);
+                if (sectionElement) {
+                    const sectionTop = sectionElement.offsetTop;
+                    const triggerRange = 200;
+        
+                    if (scrollPosition >= sectionTop - triggerRange) {
+                        setActiveTab(section);
+                    }
+                }
+            }
+        };
+        
+
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
 
     return (
         <nav>

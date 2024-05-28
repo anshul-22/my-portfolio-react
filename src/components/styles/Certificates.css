@@ -1,7 +1,8 @@
 /* Container class with the desired margins */
 #certificates {
-    margin-left: 150px;
-    margin-right: 110px;
+    margin-left: 150px; /* Left margin for desktop */
+    margin-right: 110px; /* Right margin for desktop */
+    text-align: center; /* Center-align text */
 }
 
 /* Certificates Section Styles */
@@ -12,27 +13,27 @@
     margin-bottom: 40px;
 }
 
-.cert-item img{
-    margin-top: 50px;
+.cert-item img {
+    margin-top: 50px; /* Top margin for desktop */
     width: 100%;
     border-radius: 10px;
     transition: 2s;
 }
 
+/* Media query for smaller screens */
 @media only screen and (max-width: 900px) {
     #certificates {
-        margin-left: 20px; /* Adjust margin for smaller screens */
-        margin-right: 20px; /* Adjust margin for smaller screens */
+        margin-left: 20px; /* Adjusted left margin for smaller screens */
+        margin-right: 20px; /* Adjusted right margin for smaller screens */
     }
     
     .certificates-list {
-        grid-template-columns: 1fr; /* Display one item per row */
+        grid-template-columns: 1fr; /* Display one item per row on smaller screens */
         grid-gap: 20px;
     }
 
     .cert-item img {
-        margin-top: 0; /* Remove top margin */
+        margin-top: 0; /* Remove top margin for smaller screens */
         width: 100%; /* Ensure image fills the container */
     }
 }
-
