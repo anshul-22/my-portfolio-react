@@ -28,7 +28,7 @@ const Projects = () => {
                         <a href="https://github.com/anshul-22/my-portfolio-react" className="btn btn2">Learn More</a>
                     </div>
                 </div>
-                <button className='btn btn2' href="https://github.com/anshul-22/">See More(GitHub)</button>
+                <a className='btn btn2' href="https://github.com/anshul-22">See More(GitHub)</a>
             </div>
         </div>
     );

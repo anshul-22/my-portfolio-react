@@ -19,10 +19,20 @@
     transition: 2s;
 }
 
-/* Responsive Styles */
 @media only screen and (max-width: 900px) {
+    #certificates {
+        margin-left: 20px; /* Adjust margin for smaller screens */
+        margin-right: 20px; /* Adjust margin for smaller screens */
+    }
+    
     .certificates-list {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr; /* Display one item per row */
         grid-gap: 20px;
     }
+
+    .cert-item img {
+        margin-top: 0; /* Remove top margin */
+        width: 100%; /* Ensure image fills the container */
+    }
 }
+

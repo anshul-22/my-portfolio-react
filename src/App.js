@@ -1,6 +1,6 @@
 import React from 'react';
 import './components/styles/global.css';
-import './App.css';
+// import './App.css';
 import Navbar from './components/Navbar';
 import Header from './components/Header';
 import About from './components/About';

@@ -6,3 +6,12 @@
     font-weight: 300;
     margin-top: 20px; ;
 }
+
+@media only screen and (max-width:900px){
+    .copyright{
+        font-size: 14px;
+        width: 100%; /* Ensure it covers the full width */
+        margin-left: 0; /* Remove any left margin */
+        margin-right: 0; /* Remove any right margin */
+    }
+}

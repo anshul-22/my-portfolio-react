@@ -39,11 +39,13 @@
         background-image: url('/public/images/phone-background.png');
         background-attachment: fixed;
         background-position: center;
+        background-size: cover; /* Ensure the background image covers the entire header */
     }
+    
     .header-text {
-        margin-top: 80%;
-        margin-left: 20px; /* Adjusted for smaller screens */
-        margin-right: 20px; /* Add right margin for smaller screens */
+        margin-top: 60%;
+        margin-left: 25px; /* Remove left margin */
+        margin-right: 0; /* Remove right margin */
         font-size: 16px;
     }
     .header-text h1 {
@@ -53,3 +55,4 @@
         font-size: 60%;
     }
 }
+

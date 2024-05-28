@@ -1,8 +1,8 @@
 /* Projects Section Styles */
 #projects {
     padding: 30px 0;
-    margin-left: 150px;  /* Same margin as the logo */
-    margin-right: 110px; /* Right margin */
+    margin-left: 150px;  
+    margin-right: 110px;
 }
 .projects-list {
     display: grid;
@@ -49,4 +49,5 @@
         margin-left: 30px;  /* Adjusted for smaller screens */
         margin-right: 30px; /* Adjusted for smaller screens */
     }
+    
 }
