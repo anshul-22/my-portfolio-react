@@ -4,20 +4,20 @@ import './styles/Header.css';
 const Header = () => {
   const typingAnimationElement = useRef(null);
   const typingTexts = ['Software Developer', 'Web Developer'];
-  let textIndex = 0;
-  let charIndex = 0;
+  const textIndex = useRef(0);
+  const charIndex = useRef(0);
 
   useEffect(() => {
     const type = () => {
-      if (charIndex < typingTexts[textIndex].length) {
-        typingAnimationElement.current.textContent += typingTexts[textIndex][charIndex];
-        charIndex++;
+      if (charIndex.current < typingTexts[textIndex.current].length) {
+        typingAnimationElement.current.textContent += typingTexts[textIndex.current][charIndex.current];
+        charIndex.current++;
         setTimeout(type, 100);
       } else {
         setTimeout(() => {
           typingAnimationElement.current.textContent = '';
-          textIndex = (textIndex + 1) % typingTexts.length;
-          charIndex = 0;
+          textIndex.current = (textIndex.current + 1) % typingTexts.length;
+          charIndex.current = 0;
           type();
         }, 1000);
       }
