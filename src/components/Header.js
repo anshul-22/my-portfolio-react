@@ -3,7 +3,7 @@ import './styles/Header.css';
 
 const Header = () => {
   const typingAnimationElement = useRef(null);
-  const typingTexts = useRef(['Software Developer', 'Web Developer']);
+  const typingTexts = useRef(['Software Engineer']);
   const textIndex = useRef(0);
   const charIndex = useRef(0);
 
@@ -30,7 +30,7 @@ const Header = () => {
       <div className="container">
         <div className="header-text">
           <h1>Hi,<br /> I am <span>Anshul</span></h1>
-          <p className="sub-heading">Fresher <span ref={typingAnimationElement}></span></p>
+          <p className="sub-heading"><span ref={typingAnimationElement}></span></p>
           <a href="https://drive.google.com/file/d/1tn5K2H_p54CYEbSbtFG_lqNL6N3bcog0/view?usp=drive_link" download className="btn btn2">Download Resume</a>
         </div>
       </div>
