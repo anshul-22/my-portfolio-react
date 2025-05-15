@@ -18,10 +18,9 @@ const About = () => {
                     <div className="about-col-2">
                         <h1 className="sub-title">About Me</h1>
                         <p>
-                            Dynamic and motivated fresher with a degree in Computer Science and Engineering.
-                            Proficient in Java, C++, MySQL, Hibernate,JavaScript and React. I enjoy solving
-                            problems and working in teams. Excited to use my knowledge and experience to
-                            create meaningful solutions with others.
+                            Motivated and adaptable Software Engineer with hands-on experience in Advanced Java, Springboot transitioning into DevOps and Cloud (Azure).
+                            Certified in Microsoft Azure Fundamentals (AZ-900) with solid knowledge of cloud infrastructure, IaC, and CI/CD concepts.
+                            Proven ability to design cloud-based solutions and implement Azure services for data processing and visualization.
                         </p>
                         <div className="tab-titles">
                             <p className={`tab-links ${activeTab === 'skills' ? 'active-link' : ''}`} onClick={() => openTab('skills')}>Skills</p>
@@ -36,26 +35,43 @@ const About = () => {
                                 </ul>
                                 <li><span>Frameworks :</span></li>
                                 <ul>
-                                    <li>Hibernate, Spring, React</li>
+                                    <li>Hibernate, Springboot, React</li>
                                 </ul>
                                 <li><span>Databases :</span></li>
                                 <ul>
-                                    <li>MySQL</li>
+                                    <li>MySQL, PostgreSQL</li>
                                 </ul>
-                                <li><span>IDE :</span></li>
-                                <p>Eclipse, Visual Studio</p>
+                                <li><span>Cloud & DevOps:</span></li>
+                                <p>Azure,
+                                    Docker, Kubernetes,
+                                    Terraform, Bicep, Ansible</p>
                                 <li><span>Web Dev :</span></li>
                                 <p>HTML, CSS</p>
                             </ul>
                         </div>
+
                         <div className={`tab-contents ${activeTab === 'experience' ? 'active-tab' : ''}`} id="experience">
                             <ul>
-                                <li><span>Jun 2022- Jul 2022</span><br />Full Stack Developer Intern<br />@ Robust Results Pvt Ltd (An IIT Kanpur Incubated Company)</li>
+                                <li><span>Software Engineer</span><br />May 2025- Present<br />@ Sopra Steria India Pvt Ltd</li>
+                                <ul>
+                                    <li>Working on DevOps and Azure Cloud technologies with a focus on
+                                        infrastructure automation, cloud resource management, and security best
+                                        practices.
+                                    </li>
+                                </ul>
+                                <li><span>Engineer Trainee</span><br />Nov 2024- May 2025<br />@ Sopra Steria India Pvt Ltd</li>
+                                <ul>
+                                    <li>Completed intensive training in Java, Spring Boot, React.js, and full-stack
+                                        enterprise application development</li>
+                                    <li>Transitioned to DevOps & Cloud technologies in January 2025, undergoing
+                                        structured training in Azure services</li>
+                                    <li>Designed a POC for an Azure Data Pipeline</li>
+                                </ul>
+                                <li><span> Full Stack Developer Intern</span><br />Jun 2022- Jul 2022<br />@ Robust Results Pvt Ltd (An IIT Kanpur Incubated Company)</li>
                                 <ul>
                                     <li>Led development efforts of Hospital Management System.</li>
                                     <li>Assigned as Team Lead with the responsibility of task assignment and adherence to timeline.</li>
                                 </ul>
-                                <li><span>August 2023</span><br />Virtual Internship Full Stack Developer<br />@ OpenWeaver Pvt Ltd, Chennai, IND</li>
                             </ul>
                         </div>
                         <div className={`tab-contents ${activeTab === 'education' ? 'active-tab' : ''}`} id="education">
